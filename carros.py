@@ -64,3 +64,23 @@ def remover_carro():
     print("O carro não foi encontrado!")
 
 
+def ordenar_carros():
+
+    carros.sort(key = lambda carro: carro["marca"])
+
+    print("Carros ordenados por marca!")
+
+
+def estatisticas():
+    if not carros:
+        print("Não tem carros cadastrados!")
+        return
+    
+    total = len(carros)
+
+    anos = [carro["ano"] for carro in carros]
+
+    print("O total de carros é: ", total)
+    print("Carro mais novo: ", max(anos))
+    print("Carro mais antigo: ", min(anos))
+
