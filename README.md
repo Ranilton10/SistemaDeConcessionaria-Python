@@ -71,5 +71,5 @@ O objetivo deste projeto é praticar conceitos fundamentais de programação, co
 - utilização de Git e GitHub para versionamento de código
 
 
-Autor: Ranilton Araújo
+Autor do projeto: Ranilton Araújo
 
