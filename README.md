@@ -47,3 +47,17 @@ Arquivo com funções auxiliares utilizadas para melhorar a organização e a ex
 - carros.json  
 Arquivo que funciona como um banco de dados simples onde os carros cadastrados são armazenados.
 
+## Como executar o projeto
+
+1. Clone o repositório:
+
+git clone https://github.com/seuusuario/seurepositorio.git
+
+2. Acesse a pasta do projeto:
+
+cd SistemaDeConcessionaria-Python
+
+3. Execute o programa:
+
+python main.py
+
