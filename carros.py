@@ -91,7 +91,32 @@ def remover_carro():
 
             return
 
-    print("O carro não foi encontrado.")
+    print("O carro não foi encontrado!")
+
+
+# NOVA FUNÇÃO
+def atualizar_carro():
+
+    id_carro = int(input("Digite o ID do carro que deseja atualizar: "))
+
+    for carro in carros:
+
+        if carro["id"] == id_carro:
+
+            print("Digite os novos dados do carro")
+
+            carro["marca"] = input("Nova marca do carro: ")
+            carro["modelo"] = input("Novo modelo do carro: ")
+            carro["ano"] = int(input("Novo ano do carro: "))
+            carro["preco"] = float(input("Novo preço do carro: "))
+
+            salvar_carros(carros)
+
+            print("O carro foi atualizado com sucesso!")
+
+            return
+
+    print("O carro não foi encontrado!")
 
 
 def ordenar_por_marca():

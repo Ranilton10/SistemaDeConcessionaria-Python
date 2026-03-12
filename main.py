@@ -1,10 +1,11 @@
 from carros import *
+from utils import titulo
 
 def menu():
 
     while True:
 
-        print("\n=== SISTEMA DA CONCESSIONÁRIA ===")
+        titulo("SISTEMA DA CONCESSIONÁRIA")
 
         print("1 - Cadastrar carro")
         print("2 - Listar carros")
@@ -14,6 +15,7 @@ def menu():
         print("6 - Ordenar carros por preço")
         print("7 - Estatísticas da concessionária")
         print("8 - Relatório da concessionária")
+        print("9 - Atualizar carro")
         print("0 - Sair")
 
         opcao = input("Escolha uma opção: ")
@@ -42,8 +44,11 @@ def menu():
         elif opcao == "8":
             relatorio()
 
+        elif opcao == "9":
+            atualizar_carro()
+
         elif opcao == "0":
-            print("Entendido... encerrando o sistema!")
+            print("Encerrando o sistema...")
             break
 
         else:
