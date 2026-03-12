@@ -19,3 +19,31 @@ O sistema possui as seguintes funcionalidades:
 - Estatísticas sobre os veículos cadastrados
 - Relatório geral da concessionária
 
+## Tecnologias utilizadas
+
+Este projeto foi desenvolvido utilizando:
+
+- Python
+- JSON para armazenamento de dados
+- Git para controle de versão
+- GitHub para hospedagem do repositório
+
+## Estrutura do projeto
+
+O projeto está organizado nos seguintes arquivos:
+
+- main.py  
+Arquivo principal responsável por executar o sistema e apresentar o menu ao usuário.
+
+- carros.py  
+Contém as funções responsáveis pelo gerenciamento dos carros, como cadastro, busca, remoção, atualização, ordenação e geração de relatórios.
+
+- database.py  
+Responsável por salvar e carregar os dados dos carros no arquivo JSON.
+
+- utils.py  
+Arquivo com funções auxiliares utilizadas para melhorar a organização e a exibição das informações no terminal.
+
+- carros.json  
+Arquivo que funciona como um banco de dados simples onde os carros cadastrados são armazenados.
+
