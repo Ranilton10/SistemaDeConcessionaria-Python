@@ -61,3 +61,15 @@ cd SistemaDeConcessionaria-Python
 
 python main.py
 
+## Objetivo do projeto
+
+O objetivo deste projeto é praticar conceitos fundamentais de programação, como:
+
+- organização de código em módulos
+- manipulação de arquivos
+- estruturação de um pequeno sistema em Python
+- utilização de Git e GitHub para versionamento de código
+
+
+Autor: Ranilton Araújo
+
