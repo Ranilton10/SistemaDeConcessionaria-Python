@@ -75,7 +75,7 @@ O objetivo deste projeto é praticar conceitos fundamentais de programação, co
 
 ## Observação
 
-O arquivo `carros.json` é mantido vazio para permitir que o usuário teste o sistema livremente.
+O arquivo carros.json é mantido vazio para permitir que o usuário teste o sistema livremente.
 
 ## Autor
 Desenvolvido por Ranilton Araújo
