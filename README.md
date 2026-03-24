@@ -47,8 +47,7 @@ Arquivo com funções auxiliares utilizadas para melhorar a organização e a ex
 - carros.json  
 Arquivo que funciona como um banco de dados simples onde os carros cadastrados são armazenados.
 
-- .gitignore
-
+- .gitignore  
 Arquivo responsável por informar ao Git quais arquivos e pastas devem ser ignorados.
 
 ## Como executar o projeto
