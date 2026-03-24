@@ -159,7 +159,7 @@ def relatorio():
 
     preco_medio = total_valor / total_carros
 
-    print("=== RELATÓRIO DA CONCESSIONÁRIA ===")
+    print("== RELATÓRIO DA CONCESSIONÁRIA ==")
 
     print("\nTotal de carros: ", total_carros)
     print("\nValor total do estoque: R$", total_valor)

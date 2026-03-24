@@ -5,7 +5,7 @@ def menu():
 
     while True:
 
-        titulo("SISTEMA DA CONCESSIONÁRIA")
+        titulo("== SISTEMA DA CONCESSIONÁRIA ==")
 
         print("1 - Cadastrar carro")
         print("2 - Listar carros")
