@@ -1,9 +1,8 @@
-def linha():
-    print("-" * 40)
-
+def linha(tam = 40):
+    print("-" * tam)
 
 def titulo(texto):
     linha()
-    print(texto)
+    print(texto.center(40))
     linha()
 
