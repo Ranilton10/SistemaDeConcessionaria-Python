@@ -48,14 +48,13 @@ Arquivo com funções auxiliares utilizadas para melhorar a organização e a ex
 Arquivo que funciona como um banco de dados simples onde os carros cadastrados são armazenados.
 
 - .gitignore
-
 Arquivo responsável por informar ao Git quais arquivos e pastas devem ser ignorados.
 
 ## Como executar o projeto
 
 1. Clone o repositório:
 
-git clone https://github.com/seuusuario/seurepositorio.git
+git clone https://github.com/Ranilton10/SistemaDeConcessionaria-Python.git
 
 2. Acesse a pasta do projeto:
 
@@ -78,5 +77,8 @@ O objetivo deste projeto é praticar conceitos fundamentais de programação, co
 
 O arquivo `carros.json` é mantido vazio para permitir que o usuário teste o sistema livremente.
 
+## Autor
+Desenvolvido por Ranilton Araújo
 
-## Autor do projeto: Ranilton Araújo
+GitHub: https://github.com/Ranilton10
+
