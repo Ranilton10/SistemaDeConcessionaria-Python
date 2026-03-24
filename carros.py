@@ -16,9 +16,9 @@ def gerar_id():
 def cadastrar_carro():
 
     marca = input("Qual a marca do carro: ")
-    modelo = input("Qual o modelo do carro: ")
-    ano = int(input("Qual o ano do carro: "))
-    preco = float(input("Qual o preço do carro: "))
+    modelo = input("\nQual o modelo do carro: ")
+    ano = int(input("\nQual o ano do carro: "))
+    preco = float(input("\nQual o preço do carro: "))
 
     carro = {
         "id": gerar_id(),
@@ -32,13 +32,13 @@ def cadastrar_carro():
 
     salvar_carros(carros)
 
-    print("Carro cadastrado com sucesso!")
+    print("\nCarro cadastrado com sucesso!")
 
 
 def listar_carros():
 
     if len(carros) == 0:
-        print("Não tem nenhum carro cadastrado!")
+        print("\nNão tem nenhum carro cadastrado!")
         return
 
     for carro in carros:
@@ -52,7 +52,7 @@ def listar_carros():
 
 def buscar_carro():
 
-    busca = input("Digite a marca ou modelo do carro: ").lower()
+    busca = input("\nDigite a marca ou modelo do carro: ").lower()
 
     encontrados = []
 
@@ -72,12 +72,12 @@ def buscar_carro():
 
     else:
 
-        print("Nenhum carro foi encontrado!")
+        print("\nNenhum carro foi encontrado!")
 
 
 def remover_carro():
 
-    id_carro = int(input("Digite o ID do carro para remover: "))
+    id_carro = int(input("\nDigite o ID do carro para remover: "))
 
     for carro in carros:
 
@@ -87,71 +87,70 @@ def remover_carro():
 
             salvar_carros(carros)
 
-            print("O carro foi removido!")
+            print("\nO carro foi removido!")
 
             return
 
-    print("O carro não foi encontrado!")
+    print("\nO carro não foi encontrado!")
 
 
-# NOVA FUNÇÃO
 def atualizar_carro():
 
-    id_carro = int(input("Digite o ID do carro que deseja atualizar: "))
+    id_carro = int(input("\nDigite o ID do carro que deseja atualizar: "))
 
     for carro in carros:
 
         if carro["id"] == id_carro:
 
-            print("Digite os novos dados do carro")
+            print("\nDigite os novos dados do carro")
 
-            carro["marca"] = input("Nova marca do carro: ")
-            carro["modelo"] = input("Novo modelo do carro: ")
-            carro["ano"] = int(input("Novo ano do carro: "))
-            carro["preco"] = float(input("Novo preço do carro: "))
+            carro["marca"] = input("\nNova marca do carro: ")
+            carro["modelo"] = input("\nNovo modelo do carro: ")
+            carro["ano"] = int(input("\nNovo ano do carro: "))
+            carro["preco"] = float(input("\nNovo preço do carro: "))
 
             salvar_carros(carros)
 
-            print("O carro foi atualizado com sucesso!")
+            print("\nO carro foi atualizado com sucesso!")
 
             return
 
-    print("O carro não foi encontrado!")
+    print("\nO carro não foi encontrado!")
 
 
 def ordenar_por_marca():
 
     carros.sort(key=lambda carro: carro["marca"])
 
-    print("Carros ordenados por marca!")
+    print("\nCarros ordenados por marca!")
 
 
 def ordenar_por_preco():
 
     carros.sort(key=lambda carro: carro["preco"])
 
-    print("Carros ordenados por preço!")
+    print("\nCarros ordenados por preço!")
 
 
 def estatisticas():
 
     if not carros:
-        print("Nenhum carro cadastrado!")
+        print("\nNenhum carro cadastrado!")
         return
 
     total = len(carros)
 
     anos = [carro["ano"] for carro in carros]
 
-    print("Total de carros: ", total)
-    print("Carro mais novo: ", max(anos))
-    print("Carro mais antigo: ", min(anos))
+    print("\nTotal de carros: ", total)
+    print("\nCarro mais novo: ", max(anos))
+    print("\nCarro mais antigo: ", min(anos))
 
 
 def relatorio():
 
     if not carros:
-        print("Nenhum carro cadastrado!")
+        print("\nNenhum carro cadastrado!")
         return
 
     total_carros = len(carros)
@@ -160,9 +159,9 @@ def relatorio():
 
     preco_medio = total_valor / total_carros
 
-    print("\n=== RELATÓRIO DA CONCESSIONÁRIA ===")
+    print("=== RELATÓRIO DA CONCESSIONÁRIA ===")
 
-    print("Total de carros: ", total_carros)
-    print("Valor total do estoque: R$", total_valor)
-    print("Preço médio dos carros: ", preco_medio)
+    print("\nTotal de carros: ", total_carros)
+    print("\nValor total do estoque: R$", total_valor)
+    print("\nPreço médio dos carros: ", preco_medio)
 

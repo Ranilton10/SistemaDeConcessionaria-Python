@@ -18,7 +18,7 @@ def menu():
         print("9 - Atualizar carro")
         print("0 - Sair")
 
-        opcao = input("Escolha uma opção: ")
+        opcao = input("\nEscolha uma opção: ")
 
         if opcao == "1":
             cadastrar_carro()
@@ -48,11 +48,11 @@ def menu():
             atualizar_carro()
 
         elif opcao == "0":
-            print("Encerrando o sistema...")
+            print("\nEncerrando o sistema...")
             break
 
         else:
-            print("Opção inválida!")
+            print("\nOpção inválida!")
 
 
 menu()
