@@ -74,6 +74,9 @@ O objetivo deste projeto é praticar conceitos fundamentais de programação, co
 - estruturação de um pequeno sistema em Python
 - utilização de Git e GitHub para versionamento de código
 
+## Observação
+
+O arquivo `carros.json` é mantido vazio para permitir que o usuário teste o sistema livremente.
 
 Autor do projeto: Ranilton Araújo
 
